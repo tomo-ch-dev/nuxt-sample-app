@@ -1,0 +1,59 @@
+body {
+    background-color: #F5FFFA;
+}
+
+.form-box {
+    border: 1px solid #c0c0c0;
+    border-radius: 10px;
+    width: 500px;
+    height: 470px;
+    margin: 80px auto auto auto;
+    background-color: cornsilk;
+}
+
+.form-group {
+    margin: 0 auto 12px auto;
+    width: 70%;
+}
+
+.form-control,
+.btn {
+    border-radius: 1.25rem;
+}
+
+.form-box .btn {
+    width: 70%;
+}
+
+.title {
+    margin: 40px 0 60px 0;
+    text-align: center;
+}
+
+.content {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* SP用 */
+@media screen and (max-width: 767px) {
+    html {
+        /* スマホ時の連続タップでズームしないように指定 */
+        touch-action: manipulation;
+        font-size: 14px;
+    }
+
+    .form-box {
+        width: 90%;
+    }
+
+    input,
+    textarea {
+        /* 入力フォームタップ時にズームしないように指定 */
+        font-size: 16px !important;
+    }
+}
